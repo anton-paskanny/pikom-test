@@ -1,0 +1,107 @@
+@import 'normalize';
+@import './helpers/variables';
+@import './helpers/png-sprite';
+
+html {
+  font-size: 62.5%; // =10px
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $PT-Sans;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  background-color: #fff;
+  color: $dark;
+}
+
+.container {
+  max-width: 961px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding-top: 4rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 4rem;
+  font-family: $PT-Sans-Captio;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: $dark;
+}
+
+@media all and (min-width: $bp-mobile) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: $bp-tablets) {
+  .title {
+    text-align: left;
+  }
+
+  .inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+// main-header
+//
+@import './components/header.scss';
+@import './components/logo.scss';
+@import './components/search-box.scss';
+@import './components/search-form.scss';
+@import './components/personal-area.scss';
+@import './components/menu.scss';
+@import './components/hamburger.scss';
+
+
+// welcome
+//
+@import './components/welcome.scss';
+@import './components/description.scss';
+@import './components/slider.scss';
+
+
+// products
+//
+@import './components/products.scss';
+
+
+// blocks for wrapper
+//
+@import './components/animals.scss';
+@import './components/video.scss';
+@import './components/reviews.scss';
+@import './components/subscribe.scss';
+
+
+// main-footer
+//
+@import './components/footer.scss';
+@import './components/payment.scss';
+@import './components/delivery.scss';
+@import './components/social-links.scss';

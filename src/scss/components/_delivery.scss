@@ -1,0 +1,54 @@
+@media all and (min-width: $bp-mobile) {
+  .delivery {
+    width: 145px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+
+    &__item {
+      margin-bottom: 0.3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__link {
+      display: block;
+      width: 145px;
+      height: 28px;
+      background-image: url('../img/sprite.png');
+      background-size: 213px 168px;
+      background-repeat: no-repeat;
+      background-color: #fff;
+      border-radius: 4px;
+
+      &--ems {
+        @include sprite($ems);
+      }
+
+      &--lines {
+        @include sprite($lines);
+      }
+
+      &--russia-mail {
+        @include sprite($russia-mail);
+      }
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+  .delivery {
+    &__link {
+      background-image: url('../img/sprite-2x.png');
+    }
+  }
+}
+
+@media all and (min-width: $bp-tablets) {
+  .delivery {
+    margin: 0;
+  }
+}

@@ -1,0 +1,148 @@
+@media all and (min-width: $bp-mobile) {
+  .menu {
+    color: #000;
+    background-color: $primary-color;
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    &__title {
+      margin: 0;
+    }
+
+
+    // triangle for dropdowns
+    //
+    &__triangle {
+      display: inline-block;
+      vertical-align: sub;
+      border: 5px solid transparent;
+      border-top: 5px solid #000;
+    }
+
+
+    // menu__nav
+    //
+    &__nav {
+      max-height: 0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      list-style: none;
+      transition: max-height 0.5s linear;
+
+      &--open {
+        max-height: 500px;
+      }
+    }
+
+    &__item:hover  &__submenu {
+      max-height: 400px;
+    }
+
+    &__link {
+      display: block;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      padding: 1rem;
+      text-transform: uppercase;
+    }
+
+    &__link:hover {
+      color: #fff;
+    }
+
+    &__link:hover &__triangle {
+      border-top-color: #fff;
+    }
+
+
+    // submenu
+    //
+    &__submenu {
+      max-height: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      transition: max-height 0.5s linear;
+      background-color: $submenu-bg;
+    }
+
+    &__submenu-item {
+      padding: 1rem;
+      border-bottom: 1px solid #fff;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &__submenu-link {
+      display: block;
+      color: #fff;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $bp-tablets) {
+  .menu {
+
+    &__row {
+      display: none;
+    }
+
+
+    // menu
+    //
+    &__nav {
+      display: flex;
+      justify-content: space-around;
+      max-height: inherit;
+      overflow: visible;
+    }
+
+    &__item {
+      position: relative;
+      padding: 1.3rem 0;
+    }
+
+    &__item:hover &__submenu {
+      display: block;
+    }
+
+    &__link {
+      padding: 0;
+    }
+
+
+    // submenu
+    //
+    &__submenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+    }
+
+    &__submenu-item {
+      padding: 1.3rem 0;
+    }
+
+    &__submenu-link {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,0 +1,190 @@
+@media all and (min-width: $bp-mobile) {
+  .products {
+
+    &__container {
+      padding: 0;
+    }
+
+    &__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 3.4rem 5.202913631633715%; //48px : 961px;
+      background-color: #ececec;
+      z-index: 1;
+    }
+
+    // nav
+    //
+    &__nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 1.2rem 0;
+      list-style: none;
+      color: #000;
+      background-color: $secondary-color;
+    }
+
+    &__nav-item {
+      position: relative;
+    }
+
+    &__nav-input {
+      display: none;
+    }
+
+    &__nav-label {
+      display: block;
+      padding: 1rem;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      text-transform: uppercase;
+    }
+
+    &__nav-label:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+
+    &__nav-triangle {
+      display: none;
+      position: absolute;
+      bottom: -13px;
+      left: 50%;
+      margin-left: -20px;
+      border: 20px solid transparent;
+      border-bottom: 10px solid #ececec;
+    }
+
+
+    // config for tabs
+    //
+    #product-tab-1:checked ~ &__inner-wrapper &__item:first-child,
+    #product-tab-2:checked ~ &__inner-wrapper &__item:nth-child(2),
+    #product-tab-3:checked ~ &__inner-wrapper &__item:nth-child(3),
+    #product-tab-4:checked ~ &__inner-wrapper &__item:nth-child(4),
+    #product-tab-5:checked ~ &__inner-wrapper &__item:nth-child(5) {
+      z-index: 2;
+    }
+
+    #product-tab-1:checked ~ &__nav &__nav-label[for="product-tab-1"],
+    #product-tab-2:checked ~ &__nav &__nav-label[for="product-tab-2"],
+    #product-tab-3:checked ~ &__nav &__nav-label[for="product-tab-3"],
+    #product-tab-4:checked ~ &__nav &__nav-label[for="product-tab-4"],
+    #product-tab-5:checked ~ &__nav &__nav-label[for="product-tab-5"] {
+      color: $secondary-color;
+      background-color: #fff;
+      font-weight: bold;
+    }
+
+
+    // inner-wrapper with content for tabs
+    //
+    &__inner-wrapper {
+      position: relative;
+      min-height: 273px;
+      color: $dark;
+    }
+
+
+    // product
+    //
+    &__product {
+      display: block;
+      max-height: 204px;
+      // margin-left: 5.6rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.4rem;
+      text-align: center;
+      border: 2px solid transparent;
+      border-radius: 3px;
+      background-color: #fff;
+
+      &:hover {
+        border-color: $secondary-color;
+      }
+    }
+
+    // &__product-wrapper {
+    //   padding: 0 1rem;
+    //   background-color: transparent;
+    // }
+
+    &__product-img {
+      margin: 0 auto;
+    }
+
+    &__product-title {
+      margin: 0;
+      padding: 0 0.3rem;
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
+
+    &__product-price {
+      margin-top: 1.2rem;
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: bold;
+
+      b {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+
+@media all and (min-width: $bp-tablets) {
+  .products {
+
+
+    // nav
+    //
+    &__nav {
+      justify-content: space-around;
+    }
+
+    &__nav-label {
+      display: block;
+      padding: 0;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      text-transform: uppercase;
+    }
+
+
+    // config for tabs
+    //
+    #product-tab-1:checked ~ &__nav &__nav-label[for="product-tab-1"],
+    #product-tab-2:checked ~ &__nav &__nav-label[for="product-tab-2"],
+    #product-tab-3:checked ~ &__nav &__nav-label[for="product-tab-3"],
+    #product-tab-4:checked ~ &__nav &__nav-label[for="product-tab-4"],
+    #product-tab-5:checked ~ &__nav &__nav-label[for="product-tab-5"] {
+      color: #fff;
+      background-color: transparent;
+    }
+
+    #product-tab-1:checked ~ &__nav #nav-triangle-1,
+    #product-tab-2:checked ~ &__nav #nav-triangle-2,
+    #product-tab-3:checked ~ &__nav #nav-triangle-3,
+    #product-tab-4:checked ~ &__nav #nav-triangle-4,
+    #product-tab-5:checked ~ &__nav #nav-triangle-5 {
+      display: block;
+    }
+
+
+    // product
+    //
+    &__product {
+
+    }
+  }
+}

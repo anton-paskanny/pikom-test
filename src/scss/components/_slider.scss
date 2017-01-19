@@ -1,0 +1,107 @@
+@media all and (min-width: $bp-mobile) {
+  .slider {
+
+    &__control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &--left {
+        left: 0;
+      }
+
+      &--right {
+        right: 0;
+      }
+
+      svg {
+        fill: #fff;
+      }
+    }
+
+    &__control--products.slider__control--left {
+      left: 1.560874089490114%; // 15px : 961px
+    }
+
+    &__control--products.slider__control--right {
+      right: 1.560874089490114%; // 15px : 961px
+    }
+
+    &__control--products svg {
+      fill: $dark;
+    }
+
+    &__control--welcome:hover,
+    &__control--products:hover {
+      cursor: pointer;
+    }
+
+    &__control--welcome:hover svg {
+      fill: $primary-color;
+    }
+
+    &__control--products:hover svg {
+      fill: $secondary-color;
+    }
+  }
+
+
+  // change default slick's styles
+  //
+  .slider--products .slick-slide {
+    padding: 0 1rem;
+    background-color: transparent;
+  }
+
+  .slider--welcome {
+    max-height: inherit;
+  }
+
+  .slider--welcome img {
+    width: 100%;
+  }
+
+  .slider--welcome  .slick-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-50%);
+    list-style: none;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      width: 10px;
+      height: 10px;
+      margin-right: 0.8rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    li.slick-active button {
+      background-color: $primary-color;
+    }
+
+    button {
+      padding: 0;
+      border: none;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      background-color: $light-gray;
+      color: transparent;
+      outline: none;
+    }
+  }
+}
+
+
+@media all and (min-width: $bp-desktop-large) {
+  .slider--products .slick-slide {
+    padding: 0 2.1rem;
+  }
+}

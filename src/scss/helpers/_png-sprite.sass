@@ -1,0 +1,335 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$ems-name: 'ems'
+$ems-x: 0px
+$ems-y: 0px
+$ems-offset-x: 0px
+$ems-offset-y: 0px
+$ems-width: 145px
+$ems-height: 28px
+$ems-total-width: 213px
+$ems-total-height: 168px
+$ems-image: 'sprite.png'
+$ems: (0px, 0px, 0px, 0px, 145px, 28px, 213px, 168px, 'sprite.png', 'ems', )
+$lines-name: 'lines'
+$lines-x: 0px
+$lines-y: 28px
+$lines-offset-x: 0px
+$lines-offset-y: -28px
+$lines-width: 145px
+$lines-height: 28px
+$lines-total-width: 213px
+$lines-total-height: 168px
+$lines-image: 'sprite.png'
+$lines: (0px, 28px, 0px, -28px, 145px, 28px, 213px, 168px, 'sprite.png', 'lines', )
+$mastercard-name: 'mastercard'
+$mastercard-x: 0px
+$mastercard-y: 84px
+$mastercard-offset-x: 0px
+$mastercard-offset-y: -84px
+$mastercard-width: 68px
+$mastercard-height: 42px
+$mastercard-total-width: 213px
+$mastercard-total-height: 168px
+$mastercard-image: 'sprite.png'
+$mastercard: (0px, 84px, 0px, -84px, 68px, 42px, 213px, 168px, 'sprite.png', 'mastercard', )
+$qiwi-name: 'qiwi'
+$qiwi-x: 68px
+$qiwi-y: 84px
+$qiwi-offset-x: -68px
+$qiwi-offset-y: -84px
+$qiwi-width: 68px
+$qiwi-height: 42px
+$qiwi-total-width: 213px
+$qiwi-total-height: 168px
+$qiwi-image: 'sprite.png'
+$qiwi: (68px, 84px, -68px, -84px, 68px, 42px, 213px, 168px, 'sprite.png', 'qiwi', )
+$russia-mail-name: 'russia-mail'
+$russia-mail-x: 0px
+$russia-mail-y: 56px
+$russia-mail-offset-x: 0px
+$russia-mail-offset-y: -56px
+$russia-mail-width: 145px
+$russia-mail-height: 28px
+$russia-mail-total-width: 213px
+$russia-mail-total-height: 168px
+$russia-mail-image: 'sprite.png'
+$russia-mail: (0px, 56px, 0px, -56px, 145px, 28px, 213px, 168px, 'sprite.png', 'russia-mail', )
+$svyaznoi-name: 'svyaznoi'
+$svyaznoi-x: 145px
+$svyaznoi-y: 0px
+$svyaznoi-offset-x: -145px
+$svyaznoi-offset-y: 0px
+$svyaznoi-width: 68px
+$svyaznoi-height: 42px
+$svyaznoi-total-width: 213px
+$svyaznoi-total-height: 168px
+$svyaznoi-image: 'sprite.png'
+$svyaznoi: (145px, 0px, -145px, 0px, 68px, 42px, 213px, 168px, 'sprite.png', 'svyaznoi', )
+$visa-name: 'visa'
+$visa-x: 145px
+$visa-y: 42px
+$visa-offset-x: -145px
+$visa-offset-y: -42px
+$visa-width: 68px
+$visa-height: 42px
+$visa-total-width: 213px
+$visa-total-height: 168px
+$visa-image: 'sprite.png'
+$visa: (145px, 42px, -145px, -42px, 68px, 42px, 213px, 168px, 'sprite.png', 'visa', )
+$web-money-name: 'web-money'
+$web-money-x: 145px
+$web-money-y: 84px
+$web-money-offset-x: -145px
+$web-money-offset-y: -84px
+$web-money-width: 68px
+$web-money-height: 42px
+$web-money-total-width: 213px
+$web-money-total-height: 168px
+$web-money-image: 'sprite.png'
+$web-money: (145px, 84px, -145px, -84px, 68px, 42px, 213px, 168px, 'sprite.png', 'web-money', )
+$yandex-money-name: 'yandex-money'
+$yandex-money-x: 0px
+$yandex-money-y: 126px
+$yandex-money-offset-x: 0px
+$yandex-money-offset-y: -126px
+$yandex-money-width: 68px
+$yandex-money-height: 42px
+$yandex-money-total-width: 213px
+$yandex-money-total-height: 168px
+$yandex-money-image: 'sprite.png'
+$yandex-money: (0px, 126px, 0px, -126px, 68px, 42px, 213px, 168px, 'sprite.png', 'yandex-money', )
+$ems-2x-name: 'ems@2x'
+$ems-2x-x: 0px
+$ems-2x-y: 0px
+$ems-2x-offset-x: 0px
+$ems-2x-offset-y: 0px
+$ems-2x-width: 290px
+$ems-2x-height: 56px
+$ems-2x-total-width: 426px
+$ems-2x-total-height: 336px
+$ems-2x-image: 'sprite-2x.png'
+$ems-2x: (0px, 0px, 0px, 0px, 290px, 56px, 426px, 336px, 'sprite-2x.png', 'ems@2x', )
+$lines-2x-name: 'lines@2x'
+$lines-2x-x: 0px
+$lines-2x-y: 56px
+$lines-2x-offset-x: 0px
+$lines-2x-offset-y: -56px
+$lines-2x-width: 290px
+$lines-2x-height: 56px
+$lines-2x-total-width: 426px
+$lines-2x-total-height: 336px
+$lines-2x-image: 'sprite-2x.png'
+$lines-2x: (0px, 56px, 0px, -56px, 290px, 56px, 426px, 336px, 'sprite-2x.png', 'lines@2x', )
+$mastercard-2x-name: 'mastercard@2x'
+$mastercard-2x-x: 0px
+$mastercard-2x-y: 168px
+$mastercard-2x-offset-x: 0px
+$mastercard-2x-offset-y: -168px
+$mastercard-2x-width: 136px
+$mastercard-2x-height: 84px
+$mastercard-2x-total-width: 426px
+$mastercard-2x-total-height: 336px
+$mastercard-2x-image: 'sprite-2x.png'
+$mastercard-2x: (0px, 168px, 0px, -168px, 136px, 84px, 426px, 336px, 'sprite-2x.png', 'mastercard@2x', )
+$qiwi-2x-name: 'qiwi@2x'
+$qiwi-2x-x: 136px
+$qiwi-2x-y: 168px
+$qiwi-2x-offset-x: -136px
+$qiwi-2x-offset-y: -168px
+$qiwi-2x-width: 136px
+$qiwi-2x-height: 84px
+$qiwi-2x-total-width: 426px
+$qiwi-2x-total-height: 336px
+$qiwi-2x-image: 'sprite-2x.png'
+$qiwi-2x: (136px, 168px, -136px, -168px, 136px, 84px, 426px, 336px, 'sprite-2x.png', 'qiwi@2x', )
+$russia-mail-2x-name: 'russia-mail@2x'
+$russia-mail-2x-x: 0px
+$russia-mail-2x-y: 112px
+$russia-mail-2x-offset-x: 0px
+$russia-mail-2x-offset-y: -112px
+$russia-mail-2x-width: 290px
+$russia-mail-2x-height: 56px
+$russia-mail-2x-total-width: 426px
+$russia-mail-2x-total-height: 336px
+$russia-mail-2x-image: 'sprite-2x.png'
+$russia-mail-2x: (0px, 112px, 0px, -112px, 290px, 56px, 426px, 336px, 'sprite-2x.png', 'russia-mail@2x', )
+$svyaznoi-2x-name: 'svyaznoi@2x'
+$svyaznoi-2x-x: 290px
+$svyaznoi-2x-y: 0px
+$svyaznoi-2x-offset-x: -290px
+$svyaznoi-2x-offset-y: 0px
+$svyaznoi-2x-width: 136px
+$svyaznoi-2x-height: 84px
+$svyaznoi-2x-total-width: 426px
+$svyaznoi-2x-total-height: 336px
+$svyaznoi-2x-image: 'sprite-2x.png'
+$svyaznoi-2x: (290px, 0px, -290px, 0px, 136px, 84px, 426px, 336px, 'sprite-2x.png', 'svyaznoi@2x', )
+$visa-2x-name: 'visa@2x'
+$visa-2x-x: 290px
+$visa-2x-y: 84px
+$visa-2x-offset-x: -290px
+$visa-2x-offset-y: -84px
+$visa-2x-width: 136px
+$visa-2x-height: 84px
+$visa-2x-total-width: 426px
+$visa-2x-total-height: 336px
+$visa-2x-image: 'sprite-2x.png'
+$visa-2x: (290px, 84px, -290px, -84px, 136px, 84px, 426px, 336px, 'sprite-2x.png', 'visa@2x', )
+$web-money-2x-name: 'web-money@2x'
+$web-money-2x-x: 290px
+$web-money-2x-y: 168px
+$web-money-2x-offset-x: -290px
+$web-money-2x-offset-y: -168px
+$web-money-2x-width: 136px
+$web-money-2x-height: 84px
+$web-money-2x-total-width: 426px
+$web-money-2x-total-height: 336px
+$web-money-2x-image: 'sprite-2x.png'
+$web-money-2x: (290px, 168px, -290px, -168px, 136px, 84px, 426px, 336px, 'sprite-2x.png', 'web-money@2x', )
+$yandex-money-2x-name: 'yandex-money@2x'
+$yandex-money-2x-x: 0px
+$yandex-money-2x-y: 252px
+$yandex-money-2x-offset-x: 0px
+$yandex-money-2x-offset-y: -252px
+$yandex-money-2x-width: 136px
+$yandex-money-2x-height: 84px
+$yandex-money-2x-total-width: 426px
+$yandex-money-2x-total-height: 336px
+$yandex-money-2x-image: 'sprite-2x.png'
+$yandex-money-2x: (0px, 252px, 0px, -252px, 136px, 84px, 426px, 336px, 'sprite-2x.png', 'yandex-money@2x', )
+$spritesheet-width: 213px
+$spritesheet-height: 168px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: ($ems, $lines, $mastercard, $qiwi, $russia-mail, $svyaznoi, $visa, $web-money, $yandex-money, )
+$spritesheet: (213px, 168px, 'sprite.png', $spritesheet-sprites, )
+$retina-spritesheet-width: 426px
+$retina-spritesheet-height: 336px
+$retina-spritesheet-image: 'sprite-2x.png'
+$retina-spritesheet-sprites: ($ems-2x, $lines-2x, $mastercard-2x, $qiwi-2x, $russia-mail-2x, $svyaznoi-2x, $visa-2x, $web-money-2x, $yandex-money-2x, )
+$retina-spritesheet: (426px, 336px, 'sprite-2x.png', $retina-spritesheet-sprites, )
+
+/*
+  These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+  The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+  */
+$ems-group-name: 'ems'
+$ems-group: ('ems', $ems, $ems-2x, )
+$lines-group-name: 'lines'
+$lines-group: ('lines', $lines, $lines-2x, )
+$mastercard-group-name: 'mastercard'
+$mastercard-group: ('mastercard', $mastercard, $mastercard-2x, )
+$qiwi-group-name: 'qiwi'
+$qiwi-group: ('qiwi', $qiwi, $qiwi-2x, )
+$russia-mail-group-name: 'russia-mail'
+$russia-mail-group: ('russia-mail', $russia-mail, $russia-mail-2x, )
+$svyaznoi-group-name: 'svyaznoi'
+$svyaznoi-group: ('svyaznoi', $svyaznoi, $svyaznoi-2x, )
+$visa-group-name: 'visa'
+$visa-group: ('visa', $visa, $visa-2x, )
+$web-money-group-name: 'web-money'
+$web-money-group: ('web-money', $web-money, $web-money-2x, )
+$yandex-money-group-name: 'yandex-money'
+$yandex-money-group: ('yandex-money', $yandex-money, $yandex-money-2x, )
+$retina-groups: ($ems-group, $lines-group, $mastercard-group, $qiwi-group, $russia-mail-group, $svyaznoi-group, $visa-group, $web-money-group, $yandex-money-group, )
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+    // CSS
+    .icon {
+      display: inline-block;
+    }
+
+    // HTML
+    <i class="icon icon-home"></i>
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-position($sprite)
+
+
+/*
+  The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+    It should be used with a "retina group" variable.
+
+  The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+  $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, )
+
+  .icon-home
+    @include retina-sprite($icon-home-group)
+  */
+@mixin sprite-background-size($sprite)
+  $sprite-total-width: nth($sprite, 7)
+  $sprite-total-height: nth($sprite, 8)
+  background-size: $sprite-total-width $sprite-total-height
+
+@mixin retina-sprite($retina-group)
+  $normal-sprite: nth($retina-group, 2)
+  $retina-sprite: nth($retina-group, 3)
+  @include sprite($normal-sprite)
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+    @include sprite-image($retina-sprite)
+    @include sprite-background-size($normal-sprite)
+
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
+
+/*
+  The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+    This yields the same output as CSS retina template but can be overridden in SASS
+
+  @include retina-sprites($retina-groups)
+  */
+@mixin retina-sprites($retina-groups)
+  @each $retina-group in $retina-groups
+    $sprite-name: nth($retina-group, 1)
+    .#{$sprite-name}
+      @include retina-sprite($retina-group)

@@ -1,0 +1,94 @@
+@media all and (min-width: $bp-mobile) {
+  .reviews {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__avatar {
+      display: block;
+      border-radius: 50%;
+    }
+
+    &__info {
+      margin-top: 0.5rem;
+    }
+
+    &__name {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      font-weight: bold;
+    }
+
+    &__occupation,
+    &__name {
+      margin: 0;
+    }
+
+    &__occupation {
+      margin-top: 0.5rem;
+      line-height: 1.6rem;
+      color: $light-gray;
+
+      span {
+        display: block;
+      }
+    }
+
+    &__review {
+      margin: 0;
+      margin-top: 1rem;
+      text-align: justify;
+
+      i {
+        font-size: 2rem;
+        font-style: normal;
+        color: $secondary-color;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 1rem;
+      border-bottom: 1px solid $secondary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $bp-tablets) {
+  .reviews {
+    width: 31.88097768331562%; // 300px : 941px
+    margin: 0;
+    margin-bottom: 0;
+    text-align: left;
+
+    &__header {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__info {
+      margin-top: 0;
+      margin-left: 1.4rem;
+    }
+
+    &__review {
+      text-align: left;
+    }
+  }
+}

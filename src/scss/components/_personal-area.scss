@@ -1,0 +1,106 @@
+@media all and (min-width: 320px) {
+  .personal-area {
+    margin-top: 2rem;
+
+    &__actions {
+      margin: 0;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      text-align: center;
+    }
+
+    &__info {
+      margin-top: 2rem;
+      padding: 0.5rem;
+      background-color: $primary-color;
+      border-radius: 3px;
+    }
+
+    &__basket-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__basket {
+      display: flex;
+      align-items: center;
+      margin-right: 6rem;
+    }
+
+    &__link {
+      border-bottom: 2px dashed $secondary-color;
+
+      &-desc {
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        color: $secondary-color;
+        cursor: pointer;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+
+      &--basket {
+        margin-left: 1rem;
+        border-bottom: 2px solid #000;
+
+        &:hover {
+          color: #fff;
+          border-bottom-color: #fff;
+        }
+      }
+    }
+
+    &__total-price {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      font-weight: bold;
+
+      span {
+        font-size: 1.4rem;
+        font-weight: normal;
+      }
+    }
+
+    &__delivery {
+      margin: 0;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      line-height: 2.4rem;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+
+@media all and (min-width: $bp-desktop) {
+  .personal-area {
+    width: 20.49947970863684%; // 197px : 961px;
+    margin-top: 0;
+
+    &__info {
+      margin-top: 1.25rem;
+    }
+
+    &__actions {
+      text-align: left;
+    }
+
+    &__basket-wrapper {
+      justify-content: space-between;
+    }
+
+    &__basket {
+      margin-right: 0;
+    }
+
+    &__delivery {
+      margin-top: 0.4rem;
+    }
+  }
+}

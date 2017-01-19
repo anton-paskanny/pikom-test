@@ -1,0 +1,39 @@
+@media all and (min-width: $bp-mobile) {
+  .welcome {
+    padding: 3rem 0;
+
+    &__container {
+      padding: 0;
+    }
+
+    &__slider {
+      position: relative;
+      max-height: 330px;
+      overflow: hidden;
+    }
+
+    &__description {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media all and (min-width: $bp-desktop) {
+  .welcome {
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__description {
+      width: 31.88097768331562%; // 300px : 941px
+      margin-bottom: 0;
+    }
+
+    &__slider {
+      width: 67.05632306057386%; // 631px : 941p;
+    }
+  }
+}

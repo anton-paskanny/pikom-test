@@ -1,0 +1,27 @@
+// fonts
+//
+$PT-Sans: 'PT Sans', 'Arial', 'Tahoma', sans-serif;
+$PT-Sans-Captio: 'PT Sans Caption', 'Arial', 'Tahoma', sans-serif;
+
+
+//  colors
+//
+$yellow: #f6b213;
+$dirty-yellow: #bb8a18;
+$green: #82c044;
+$blue: #0675cb;
+$dark: #303030;
+$light-gray: #909090;
+
+$primary-color: $yellow;
+$secondary-color: $green;
+$btn-background: $blue;
+$submenu-bg: $dirty-yellow;
+
+
+// breakpoints
+//
+$bp-desktop-large: 1200px;
+$bp-desktop: 1024px;
+$bp-tablets: 768px;
+$bp-mobile: 320px;

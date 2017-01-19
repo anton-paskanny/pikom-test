@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption%7CPT+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>PEST911</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container main-header__container">
+      <div class="main-header__top-bar">
+        <a class="logo">
+          <img src="img/logo.jpg" alt="PEST911" class="logo__img" width="159" height="84">
+        </a>
+        <div class="search-box">
+          <div class="search-box__top">
+            <div class="search-box__phone-numbers">
+              <p class="search-box__phone-number">
+                <span>Москва:</span>  +7 (499) <b>505-50-03</b>
+              </p>
+              <p class="search-box__phone-number">
+                <span>Регионы РФ:</span> <b>8 800 3335 911</b>
+              </p>
+            </div>
+            <div class="search-box__actions">
+              <p class="search-box__call">
+                <a class="search-box__link" href="#" title="Заказать звонок">Заказать звонок</a>
+                или
+                <a class="search-box__link" href="#" title="Написать нам">написать нам</a>
+              </p>
+            </div>
+          </div>
+          <div class="search-box__form-wrapper">
+            <form class="search-form" method="POST">
+              <input type="text" class="search-form__input" placeholder="Поиск среди 35 000 товаров" name="search">
+              <button type="submit" class="search-form__submit">
+                <img src="img/svg/search.svg" alt="Поиск">
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="personal-area">
+          <p class="personal-area__actions">
+            <a class="personal-area__link" href="#" title="Войти">Войти</a>
+            или
+            <a class="personal-area__link" href="#" title="Зарегистрироваться">зарегистрироваться</a>
+          </p>
+          <div class="personal-area__info">
+            <div class="personal-area__basket-wrapper">
+              <div class="personal-area__basket">
+                <img class="personal-area__img" src="img/svg/basket.svg" alt="Корзина">
+                <a class="personal-area__link personal-area__link--basket" href="#" title="Корзина">
+                  <span class="personal-area__link-desc">Корзина</span>
+                </a>
+              </div>
+              <p class="personal-area__total-price">
+                1 400 <span>руб.</span>
+              </p>
+            </div>
+            <p class="personal-area__delivery">
+              Доставка: с 09:00 до 19:00 (МСК)
+            </p>
+          </div>
+        </div>
+      </div>
+      <nav class="main-header__menu">
+        <div class="menu">
+          <div class="menu__row">
+            <p class="menu__title">Меню</p>
+            <div class="hamburger">
+              <button class="hamburger__wrapper">
+                <span class="hamburger__item"></span>
+                <span class="hamburger__item"></span>
+                <span class="hamburger__item"></span>
+                <span class="hamburger__item"></span>
+              </button>
+            </div>
+          </div>
+          <ul class="menu__nav">
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link--dropdown" title="По вредителям">
+                По вредителям
+                <span class="menu__triangle"></span>
+              </a>
+              <ul class="menu__submenu">
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item1">Item 1</a>
+                </li>
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item2">Item 2</a>
+                </li>
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item3">Item 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link menu__link--dropdown" title="По виду продукции">
+                По виду продукции
+                <span class="menu__triangle"></span>
+              </a>
+              <ul class="menu__submenu">
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item1">Item 1</a>
+                </li>
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item2">Item 2</a>
+                </li>
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item3">Item 3</a>
+                </li>
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item4">Item 4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link--dropdown" title="По брендам">
+                По брендам
+                <span class="menu__triangle"></span>
+              </a>
+              <ul class="menu__submenu">
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item1">Item 1</a>
+                </li>
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item2">Item 2</a>
+                </li>
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item3">Item 3</a>
+                </li>
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item4">Item 4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link--dropdown" title="Аксессуары">
+                Аксессуары
+                <span class="menu__triangle"></span>
+              </a>
+              <ul class="menu__submenu">
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item1">Item 1</a>
+                </li>
+                <li class="menu__submenu-item">
+                  <a href="#" class="menu__submenu-link" title="Item1">Item 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="Акции">
+                Акции
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="База знаний">
+                База знаний
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="welcome">
+    <div class="container welcome__container">
+      <div class="welcome__description">
+        <ul class="description">
+          <li class="description__item">
+            <div class="description__icon-wrapper">
+              <img src="img/svg/cube.svg" alt="Квадрат" class="description__icon" width="21" height="23">
+            </div>
+            <div class="description__wrapper">
+              <h3 class="description__title">Оптовикам</h3>
+              <p class="description__info">
+                Приглашаем к сотрудничеству организации и физических
+                лиц для работы в качестве наших дилеров или торговых представителей.
+              </p>
+            </div>
+          </li>
+          <li class="description__item">
+            <div class="description__icon-wrapper">
+              <img src="img/svg/question.svg" alt="Вопросительный знак" class="description__icon" width="15" height="24">
+            </div>
+            <div class="description__wrapper">
+              <h3 class="description__title">Задать вопрос</h3>
+              <p class="description__info">
+                Если у вас возникли вопросы, то наши эксперты
+                &laquo;REST 911&raquo; обязательно ответят на них!
+              </p>
+            </div>
+          </li>
+          <li class="description__item">
+            <div class="description__icon-wrapper">
+              <img src="img/svg/play-button.svg" alt="Видео" class="description__icon" width="15" height="18">
+            </div>
+            <div class="description__wrapper">
+              <h3 class="description__title">Видео</h3>
+              <p class="description__info">
+                Полезные советы по борьбе с вредителями в
+                саду, дома и на производстве.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="welcome__slider">
+        <div class="slider slider--welcome">
+          <div class="slider__slide">
+            <img src="img/main-slide.jpg" alt="Таракан на кухне">
+          </div>
+          <div class="slider__slide">
+            <img src="img/main-slide.jpg" alt="Таракан на кухне">
+          </div>
+          <div class="slider__slide">
+            <img src="img/main-slide.jpg" alt="Таракан на кухне">
+          </div>
+        </div>
+        <div class="slider__control slider__control--welcome slider__control--left">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 404.258 404.25" width="22" height="39" preserveaspectratio="none">
+            <path d="M289.927 18l-24-18L114.33 202.13l151.597 202.128 24-18-138.096-184.13"/>
+          </svg>
+        </div>
+        <div class="slider__control slider__control--welcome slider__control--right">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 404.258 404.258" width="22" height="39" preserveaspectratio="none">
+            <path d="M138.33 0l-24 18 138.097 184.13L114.33 386.257l24 18 151.597-202.13"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="products">
+    <div class="container products__container">
+      <input id="product-tab-1" type="radio" class="products__nav-input"  name="tabs" checked>
+      <input id="product-tab-2" type="radio" class="products__nav-input" name="tabs">
+      <input id="product-tab-3" type="radio" class="products__nav-input" name="tabs">
+      <input id="product-tab-4" type="radio" class="products__nav-input" name="tabs">
+      <input id="product-tab-5" type="radio" class="products__nav-input" name="tabs">
+      <ul class="products__nav">
+        <li class="products__nav-item">
+          <label for="product-tab-1" class="products__nav-label">Новинки</label>
+          <span class="products__nav-triangle" id="nav-triangle-1"></span>
+        </li>
+        <li class="products__nav-item">
+          <label for="product-tab-2" class="products__nav-label">Рекомендуем</label>
+          <span class="products__nav-triangle" id="nav-triangle-2"></span>
+        </li>
+        <li class="products__nav-item">
+          <label for="product-tab-3" class="products__nav-label">Хиты продаж</label>
+          <span class="products__nav-triangle" id="nav-triangle-3"></span>
+        </li>
+        <li class="products__nav-item">
+          <label for="product-tab-4" class="products__nav-label">Акции</label>
+          <span class="products__nav-triangle" id="nav-triangle-4"></span>
+        </li>
+        <li class="products__nav-item">
+          <label for="product-tab-5" class="products__nav-label">Бренды</label>
+          <span class="products__nav-triangle" id="nav-triangle-5"></span>
+        </li>
+      </ul>
+      <div class="products__inner-wrapper">
+        <div class="products__item">
+          <div class="slider slider--products">
+            <div class="products__product-wrapper">
+              <a href="#" class="products__product" title="Коготь SuperCat Ловушка для мышей">
+                <img src="img/products/1.jpg" alt="Коготь" class="products__product-img">
+                <h5 class="products__product-title">
+                  &laquo;Коготь&raquo; SuperCat Ловушка для мышей
+                </h5>
+                <p class="products__product-price">
+                  19 890 <b>руб.</b>
+                </p>
+              </a>
+            </div>
+            <div class="porducts__product-wrapper">
+              <a href="#" class="products__product" title="Крысоловка Swissinno SuperCat">
+                <img src="img/products/2.jpg" alt="Крысоловка" class="products__product-img">
+                <h5 class="products__product-title">
+                  Крысоловка Swissinno SuperCat
+                </h5>
+                <p class="products__product-price">
+                  3 200 <b>руб.</b>
+                </p>
+              </a>
+            </div>
+            <div class="porducts__product-wrapper">
+              <a href="#" class="products__product" title="Коготь SuperCat Ловушка для мышей">
+                <img src="img/products/1.jpg" alt="Коготь" class="products__product-img">
+                <h5 class="products__product-title">
+                  &laquo;Коготь&raquo; SuperCat Ловушка для мышей
+                </h5>
+                <p class="products__product-price">
+                  19 890 <b>руб.</b>
+                </p>
+              </a>
+            </div>
+            <div class="porducts__product-wrapper">
+              <a href="#" class="products__product" title="Victors Электронный уничтожитель грызунов">
+                <img src="img/products/3.jpg" alt="Victors" class="products__product-img">
+                <h5 class="products__product-title">
+                  Victors Электронный уничтожитель грызунов
+                </h5>
+                <p class="products__product-price">
+                  2 850 <b>руб.</b>
+                </p>
+              </a>
+            </div>
+            <div class="porducts__product-wrapper">
+              <a href="#" class="products__product" title="Крысоловка Swissinno SuperCat">
+                <img src="img/products/2.jpg" alt="" class="products__product-img">
+                <h5 class="products__product-title">
+                  Крысоловка Swissinno SuperCat
+                </h5>
+                <p class="products__product-price">
+                  3 200 <b>руб.</b>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="slider__control slider__control--products slider__control--left">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 404.258 404.258" width="22" height="39" preserveaspectratio="none">
+              <path d="M289.927 18l-24-18L114.33 202.13l151.597 202.128 24-18-138.096-184.13"/>
+            </svg>
+          </div>
+          <div class="slider__control slider__control--products slider__control--right">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 404.258 404.258" width="22" height="39" preserveaspectratio="none">
+              <path d="M138.33 0l-24 18 138.097 184.13L114.33 386.257l24 18 151.597-202.13"/>
+            </svg>
+          </div>
+        </div>
+        <div class="products__item"></div>
+        <div class="products__item"></div>
+        <div class="products__item"></div>
+        <div class="products__item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="container">
+      <section class="animals">
+        <h2 class="title">Топ вредителей</h2>
+        <ul class="animals__list">
+          <li class="animals__item">
+            <a href="#" class="animals__link" title="Комары">
+              <img src="img/vermins/gnats.jpg" alt="Комары" class="animals__img">
+              <h5 class="animals__title">Комары</h5>
+            </a>
+          </li>
+          <li class="animals__item">
+            <a href="#" class="animals__link" title="Тараканы">
+              <img src="img/vermins/cockroachs.jpg" alt="Тараканы" class="animals__img">
+              <h5 class="animals__title">Тараканы</h5>
+            </a>
+          </li>
+          <li class="animals__item">
+            <a href="#" class="animals__link" title="Грызуны">
+              <img src="img/vermins/rodents.jpg" alt="Грызуны" class="animals__img">
+              <h5 class="animals__title">Грызуны</h5>
+            </a>
+          </li>
+          <li class="animals__item">
+            <a href="#" class="animals__link" title="Птицы">
+              <img src="img/vermins/birds.jpg" alt="Птицы" class="animals__img">
+              <h5 class="animals__title">Птицы</h5>
+            </a>
+          </li>
+          <li class="animals__item">
+            <a href="#" class="animals__link" title="Мыши">
+              <img src="img/vermins/mouses.jpg" alt="Мыши" class="animals__img">
+              <h5 class="animals__title">Мыши</h5>
+            </a>
+          </li>
+          <li class="animals__item">
+            <a href="#" class="animals__link" title="Крысы">
+              <img src="img/vermins/rats.jpg" alt="Крысы" class="animals__img">
+              <h5 class="animals__title">Крысы</h5>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="inner-wrapper">
+        <div class="video">
+          <h2 class="title">Видео</h2>
+          <div class="video__item">
+            <iframe height="215" src="https://www.youtube.com/embed/JNrRMS4X9ew" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="reviews">
+          <h2 class="title">Отзывы</h2>
+          <header class="reviews__header">
+            <img class="reviews__avatar" src="img/review.jpg" alt="Фотография" width="78" height="78">
+            <div class="reviews__info">
+              <p class="reviews__name">
+                Ларина Светлана
+              </p>
+              <p class="reviews__occupation">
+                <span>Садовод&minus;любитель</span>
+                <span>Стаж 2 года</span>
+              </p>
+            </div>
+          </header>
+          <blockquote class="reviews__review">
+            <i>&laquo;</i>
+            Кстати, насчет кротов, был случай: крот проделал ход под сараем.
+            Откопали нору, направили туда отпугиватель. За неделю
+            крот ушел незнамо куда. На улице такие эксперименты не проводила.
+            <i>&raquo;</i>
+          </blockquote>
+          <a href="#" class="reviews__link">Посмотреть все отзывы</a>
+        </div>
+        <div class="subscribe">
+          <h2 class="title">Подписаться</h2>
+          <p class="subscribe__info">
+            Подпишитесь на рассылку, чтобы первыми
+            узнавать о наших новинках и получать призы
+          </p>
+          <form class="subscribe__form">
+            <input type="email" class="subscribe__input" name="email" placeholder="*Эл. почта" required>
+            <input type="text" class="subscribe__input" name="name" placeholder="Имя" required>
+            <input type="submit" class="subscribe__submit" value="Подписаться">
+          </form>
+          <p class="subscribe__info">
+            Заполните <a href="#">анкету</a> и получайте индивидуальные предложения!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="container main-footer__container">
+      <div class="main-footer__top-bar">
+        <div class="main-footer__item">
+          <h2 class="main-footer__title">О нас</h2>
+          <ul class="main-footer__list">
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="О компании">О компании</a>
+            </li>
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="Отзывы">Отзывы</a>
+            </li>
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="Мы и СМИ">Мы и СМИ</a>
+            </li>
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="База знаний">База знаний</a>
+            </li>
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="Контакты">Контакты</a>
+            </li>
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="Лента событий">Лента событий</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__item">
+          <h2 class="main-footer__title">Сервис</h2>
+          <ul class="main-footer__list">
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="Условия доставки">Условия доставки</a>
+            </li>
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="Условия оплаты">Условия оплаты</a>
+            </li>
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="Условия возврата">Условия возврата</a>
+            </li>
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="Оптовикам">Оптовикам</a>
+            </li>
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="Гарантийные обязательства">Гарантийные обязательства</a>
+            </li>
+            <li class="main-footer__list-item">
+              <a href="#" class="main-footer__list-link" title="Конфиденциальность">Конфиденциальность</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__item">
+          <h2 class="main-footer__title">Способы оплаты</h2>
+          <ul class="payment">
+            <li class="payment__item">
+              <a href="#" class="payment__link payment__link--webmoney" title="WebMoney"></a>
+            </li>
+            <li class="payment__item">
+              <a href="#" class="payment__link payment__link--qiwi" title="Qiwi"></a>
+            </li>
+            <li class="payment__item">
+              <a href="#" class="payment__link payment__link--mastercard" title="MasterCard"></a>
+            </li>
+            <li class="payment__item">
+              <a href="#" class="payment__link payment__link--svyaznoi" title="Связной"></a>
+            </li>
+            <li class="payment__item">
+              <a href="#" class="payment__link payment__link--yandex" title="Яндекс деньги"></a>
+            </li>
+            <li class="payment__item">
+              <a href="#" class="payment__link payment__link--visa" title="VISA"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__item">
+          <h2 class="main-footer__title">Способы доставки</h2>
+          <ul class="delivery">
+            <li class="delivery__item">
+              <a href="" class="delivery__link delivery__link--russia-mail" title="Почта России"></a>
+            </li>
+            <li class="delivery__item">
+              <a href="" class="delivery__link delivery__link--lines" title="Деловые линии"></a>
+            </li>
+            <li class="delivery__item">
+              <a href="" class="delivery__link delivery__link--ems" title="EMS Почта России"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-footer__bottom-bar">
+        <p class="main-footer__copyright">
+          &copy; 2016 &laquo;PEST 911&raquo;
+        </p>
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a href="#" class="social-links__link" title="VK">
+              <img class="social-links__img" src="img/svg/vk.svg" alt="VK">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link" title="Facebook">
+              <img class="social-links__img" src="img/svg/facebook.svg" alt="facebook">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link" title="Google+">
+              <img class="social-links__img" src="img/svg/google-plus.svg" alt="google+">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link" title="YouTube">
+              <img class="social-links__img" src="img/svg/youtube.svg" alt="YouTube">
+            </a>
+          </li>
+        </ul>
+        <p class="main-footer__author">
+          Создание сайта &ndash; компания <a href="#" title="Пиком">&laquo;Пиком&raquo;</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.slider--welcome').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        variableWidth: true,
+        prevArrow: $('.slider__control--left.slider__control--welcome'),
+        nextArrow: $('.slider__control--right.slider__control--welcome'),
+        responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              variableWidth: false
+            }
+          }
+        ]
+      });
+
+      $('.slider--products').slick({
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        speed: 800,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        prevArrow: $('.slider__control--left.slider__control--products'),
+        nextArrow: $('.slider__control--right.slider__control--products'),
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 427,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 321,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              variableWidth: false
+            }
+          }
+        ]
+      });
+    });
+  </script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

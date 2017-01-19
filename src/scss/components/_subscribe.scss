@@ -1,0 +1,69 @@
+@media all and (min-width: $bp-mobile) {
+  .subscribe {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: $light-gray;
+
+    &__info {
+      a {
+        color: $dark;
+        border-bottom: 1px solid $secondary-color;
+      }
+
+      a:hover {
+        color: $secondary-color;
+      }
+    }
+
+    &__form {
+      margin-top: 1.4rem;
+      margin-bottom: 2rem;
+    }
+
+    &__input,
+    &__submit {
+      width: 100%;
+      border: none;
+    }
+
+    &__input {
+      padding: 0.2rem 0;
+      line-height: 2rem;
+      border-bottom: 2px solid $dark;
+      color: $light-gray;
+
+      &:first-child {
+        margin-bottom: 1.4rem;
+      }
+    }
+
+    &__submit {
+      margin-top: 2rem;
+      padding: 1rem 0;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      font-weight: bold;
+      border: 2px solid transparent;
+      color: #fff;
+      background-color: $btn-background;
+
+      &:hover {
+        color: $btn-background;
+        background-color: #fff;
+        border-color: $btn-background;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $bp-tablets) {
+  .subscribe {
+    width: 23.37938363443146%; // 220px : 941px
+    margin: 0;
+    text-align: left;
+  }
+}

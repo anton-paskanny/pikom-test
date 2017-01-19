@@ -1,0 +1,24 @@
+@media all and (min-width: $bp-mobile) {
+  .main-header {
+    padding-top: 2rem;
+
+    &__container {
+      padding: 0;
+    }
+
+    &__menu {
+      margin-top: 2.6rem;
+    }
+  }
+}
+
+@media all and (min-width: $bp-desktop) {
+  .main-header {
+
+    &__top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+}

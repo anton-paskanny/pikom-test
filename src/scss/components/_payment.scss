@@ -1,0 +1,121 @@
+@media all and (min-width: $bp-mobile) {
+  .payment {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 214px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+
+    &__item {
+
+      &:nth-child(3n+2) {
+        margin: 0 0.5rem;
+      }
+
+      &:nth-child(n+4) {
+        margin-top: 0.5rem;
+      }
+    }
+
+    &__link {
+      display: block;
+      width: 68px;
+      height: 42px;
+      background-image: url('../img/sprite.png');
+      background-size: 213px 168px;
+      background-repeat: no-repeat;
+      background-color: #fff;
+      border-radius: 4px;
+
+      &--webmoney {
+        @include sprite($web-money);
+      }
+
+      &--qiwi {
+        @include sprite($qiwi);
+      }
+
+      &--mastercard {
+        @include sprite($mastercard);
+      }
+
+      &--svyaznoi {
+        @include sprite($svyaznoi);
+      }
+
+      &--yandex {
+        @include sprite($yandex-money);
+      }
+
+      &--visa {
+        @include sprite($visa);
+      }
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+  .payment {
+    &__link {
+      background-image: url('../img/sprite-2x.png');
+    }
+  }
+}
+
+@media all and (min-width: $bp-tablets) {
+  .payment {
+    width: 89.16666666666667%; // 214px : 240px
+    margin: 0;
+    padding-right: 0.5rem;
+
+    &__item {
+      margin-bottom: 0.5rem;
+
+      &:nth-child(3n+2) {
+        margin: 0;
+      }
+
+      &:nth-child(n+4) {
+        margin-top: 0;
+      }
+
+      &:nth-child(even) {
+        margin-left: 0.5rem;
+      }
+
+      &:nth-child(n+5) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $bp-desktop) {
+  .payment {
+    width: 214px;
+    padding-right: 0;
+
+    &__item {
+
+      &:nth-child(even) {
+        margin-left: 0;
+      }
+
+      &:nth-child(3n+2) {
+        margin: 0 0.5rem;
+      }
+
+      &:nth-child(n+4) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      &:nth-child(n+5) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
